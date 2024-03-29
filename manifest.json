@@ -1,10 +1,40 @@
 {
-    "name": "DevTools Sample Extension",
-    "description": "A Basic DevTools Extension invoking CDP APIs",
+    "action": {
+       "default_icon": {
+          "128": "icons/icon128.png",
+          "16": "icons/icon16.png",
+          "300": "icons/icon300.png",
+          "48": "icons/icon48.png"
+       },
+       "default_popup": "myscreener.html",
+       "default_title": "Crypto Screener+ for Binance"
+    },
+    "content_scripts": [
+      {
+          "matches": [
+            "<all_urls>"
+          ],
+          "js": ["js/myscreener.js"]
+      }
+  ],
+ 
+  "options_ui": {
+   "page": "options.html",
+   "open_in_tab": false
+ },
+    "author": "Mobility in Life Applications",
+    "description": "our first effort here.",
+    "icons": {
+       "128": "icons/icon128.png",
+       "16": "icons/icon16.png",
+       "300": "icons/icon300.png",
+       "48": "icons/icon48.png"
+    },
+    "incognito": "split",
     "manifest_version": 3,
-    "version": "1.0",
-    "devtools_page": "devtools.html",
-    "permissions": [
-        "system.memory"
-    ]
-}
+    "minimum_chrome_version": "88.0",
+    "name": "Crypto Screener+ for Binance",
+    "permissions": [ "alarms", "storage","webNavigation" ],
+    "version": "1.2.0.2"
+ }
+ 

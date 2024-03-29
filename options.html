@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Crypto Screener+ Options ..</title>
+    
+  </head>
+  <body>
+<style>
+.vodiapicker{
+  display: none; 
+}
+
+#a{
+  padding-left: 0px;
+}
+
+#a img, .btn-select img{
+  width: 33px;
+  height: 28px;
+  margin-top: 2px;
+  margin-bottom: -10px;
+}
+
+#a li{
+  list-style: none;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+#a li:hover{
+ background-color: #F4F3F3;
+}
+
+#a li img{
+  width: 33px;
+  height: 33px;
+  margin-top: 2px;
+  margin-bottom: -7px;
+  
+}
+
+#a li span, .btn-select li span{
+  margin-left: 30px;
+  margin-bottom: 5px;
+}
+
+/* item list */
+
+.b{
+  display: none;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 6px 12px rgba(0,0,0,.175);
+  border: 1px solid rgba(0,0,0,.15);
+  border-radius: 5px;
+  
+}
+
+.open{
+  display: show !important;
+}
+
+.btn-select{
+  margin-top: 1px;
+  width: 100%;
+  max-width: 400px;
+  height: 50px;
+  border-radius: 5px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+ 
+}
+.btn-select li{
+  list-style: none;
+  float: left;
+  padding-bottom: 0px;
+}
+
+.btn-select:hover li{
+  margin-left: 0px;
+}
+
+.btn-select:hover{
+  background-color: #F4F3F3;
+  border: 1px solid transparent;
+  box-shadow: inset 0 0px 0px 1px #ccc;
+  
+  
+}
+
+.btn-select:focus{
+   outline:none;
+}
+
+.lang-select{
+  margin-left: 20px;
+}
+
+</style>
+    
+    <br>
+    OPTIONS 
+    <br>
+    <hr>
+    <br>
+    <label>
+      <input type="checkbox" id="linksinnewtab" />
+      Open links in new tab ?
+    </label>
+    <hr>
+    <br>
+    <label>
+      <input type="checkbox" id="keepthefocus" />
+      Keep extension open ?
+    </label>
+
+    <hr>
+    <br>
+    <div style="margin-left: 10px;">
+      Select what link to open when you click a pair:
+   </div>
+<!--
+<div style="margin-left: 10px;">
+  <label>
+    <select title="What to open ?" id="wheretogo">
+      <option value="overwater"><div><svg style="margin:opx" xmlns="http://www.w3.org/2000/svg" height="56" width="56" viewBox="0 0 56 56">
+        <g>
+          <ellipse cy="28" cx="28" stroke-width="1.875" ry="27.0625" rx="27.0625" stroke="#FFFFFF" fill="transparent"></ellipse>
+           
+           </g>
+           
+      </svg>dsa</div>Overwater (mlapplications.com)</option>
+      <option value="binance_futures">Binance [Futures] - trade</option>
+      <option value="binance_spot">Binance [Spot] - trade</option>
+      <option value="tradingview"><div><svg style="margin:opx" xmlns="http://www.w3.org/2000/svg" height="56" width="56" viewBox="0 0 56 56">
+        <g>
+          <ellipse cy="28" cx="28" stroke-width="1.875" ry="27.0625" rx="27.0625" stroke="#FFFFFF" fill="transparent"></ellipse>
+           
+           </g>
+           
+      </svg></div>TradingView</option>
+    </select>
+  </label>
+
+</div>
+    <hr>
+    <br>
+-->
+
+    <select class="vodiapicker">
+      <option value="overwater" class="test" data-thumbnail="/icons/mlapplications.png">[chart] OVERWATER (by mlapplications.com)</option>
+      <option value="binance_futures" data-thumbnail="/icons/binance.png">[trade] BINANCE - FUTURES</option>
+      <option value="binance_spot" data-thumbnail="/icons/binance.png">[trade] BINANCE - SPOT</option>
+      <option value="tradingview" data-thumbnail="/icons/tradingview.png">[Chart] TRADINGVIEW</option>
+<!--      <option value="de" data-thumbnail="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/MO-supp-E.svg/600px-MO-supp-E.svg.png">Danish</option>
+      <option value="dk" data-thumbnail="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/F_icon.svg/267px-F_icon.svg.png">French</option>
+      <option value="fr" data-thumbnail="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/2000px-Google_%22G%22_Logo.svg.png">Greek</option>
+      <option value="gr" data-thumbnail="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/4H_Emblem.svg/1000px-4H_Emblem.svg.png">Italian</option>
+-->
+</select>
+
+<div class="lang-select">
+<button class="btn-select" value=""></button>
+<div class="b">
+<ul id="a"></ul>
+</div>
+</div>
+<hr>
+<br>
+    <div id="status" style="margin-left: 10px;">
+    </div>
+    <div class="row" style="margin-left: 10px;">
+
+    <div class="col  push-s1">
+   
+      <button id="save" data-target="modal1" style="width: 90px; height: 45px;" class="addBtn  modal-trigger background-color: myblue">
+     <div>Save ..</div> 
+   </button>
+  
+    </div>  
+    <div class="col s2 push-s2">
+		</div>
+  </div>
+
+    
+
+  <script src="js/materialize.min.js"></script>
+  <link type="text/css" rel="stylesheet" href="css/mymaterialize.min.css"  media="projection"/>
+  <script src="/js/jquery.min.js"></script>
+  <script src="js/options.js"></script>
+
+    <!--https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js-->
+    <!--Import materialize.css-->
+<!---->
+    <!--Main Stylesheet-->
+  <link rel="stylesheet" type="text/css" media="screen" href="css/app.css" />
+
+  <link rel="stylesheet" href="css/mytemplate.css">
+  </body>
+</html>

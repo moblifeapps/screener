@@ -1,0 +1,857 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+
+		<title>Screener+ (mlapplications.com)</title>
+	<!--	<link rel="preload" as="script" href="https://live.demand.supply/up.js"><script async data-cfasync="false" type="text/javascript" src="https://live.demand.supply/up.js"></script>
+    -->		<!-- Google tag (gtag.js) -->
+<!--		<script async src="https://www.googletagmanager.com/gtag/js?id=G-3T2F9D32Z3"></script>
+		<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'G-3T2F9D32Z3');
+		</script> -->
+<!--		<script src="https://unpkg.com/@mui/material@latest/umd/material-ui.production.min.js" ></script>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+	-->
+		<!-- Fix for iOS Safari zooming bug -->
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+
+
+		 
+ 
+
+		<link href="css/trebuchet-ms-2" rel="stylesheet">
+        <script src="js/jquery.min.js"></script>
+	<!--	<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+		<script type="text/javascript" src="charting_library/charting_library.standalone.js"></script>
+		<script type="text/javascript" src="datafeeds/udf/dist/bundle.js"></script> -->
+	<!--	<script type="text/javascript" src="mydatafeed.js"></script> 
+		<script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.2/jquery.min.js"></script>-->
+
+		
+	<!--	<script type="text/javascript" src="mydatafeed.js"></script>
+		<script type="text/javascript" src="myclient.js"></script> -->
+<!--		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.2/jquery.min.js"></script>
+	<script src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.min.js" type="text/javascript"></script> -->
+	<script src="js/jquery.dataTables.min.js" type="text/javascript"></script>
+	<script src="js/dataTables.scrollResize.min.js" type="text/javascript"></script>
+		
+		<link rel="stylesheet" href="js/jquery.dataTables.min.css" />
+<!--		<script src='mymaterialize.js'></script>
+	-->	   <!--Bootstrap CDN-->
+		   <link rel="stylesheet" href="js/bootstrap.min.css">
+<!--				    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+		   crossorigin="anonymous"> 
+   <link rel="stylesheet"
+		    href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
+			<script src="js/materialize.min.js"></script>
+		   <!--https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js-->
+		   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		   <!--Import materialize.css-->
+	   <link type="text/css" rel="stylesheet" href="css/mymaterialize.min.css"  media="screen,projection"/>
+	<!---->
+		   <!--Main Stylesheet-->
+	   <link rel="stylesheet" type="text/css" media="screen" href="css/app.css" />
+   
+		 <link rel="stylesheet" href="css/mytemplate.css">
+		
+<!--		 <link href="nouislider.css" rel="stylesheet">
+<script src="nouislider.js"></script>
+<script src="wNumb.js"></script> -->
+<!--<script>
+	d3.csv('BTCUSDTPERP22.csv')
+  .then(function(data) {
+	////console.log(data)
+	var thelist = data;
+	//console.log(thelist);
+//	const paparia = d3.csvParse(data);
+
+//	//console.log(paparia)
+      // data is now whole data set
+      // draw chart in here!
+  })
+  .catch(function(error){
+	//console.log(error)
+     // handle error   
+  })
+  const res = d3.csvParse("Name,Age\nJane,29\nJoe,33");
+  //console.log(res);
+</script> -->
+
+
+ 
+	</head>
+
+	<body style="margin:0px; padding: 0px; width: 100%; height: 600px; min-height: 400px; background-color: #0078B7; min-width: 550px;">
+		<style>
+
+			.dropdown-content {
+				border-bottom: 1px solid #4285F4;
+				color: #0064C8;
+			}
+			
+			.select-dropdown {
+				border-bottom: 1px solid #4285F4;
+				color: #0064C8;
+			}
+
+
+
+	/* .form-wrap input:focus:not([type]):not([readonly]),.form-wrap input[type="text"]:focus:not(.browser-default):not([readonly]),.form-wrap input[type="password"]:focus:not(.browser-default):not([readonly]), input[type="email"]:focus:not(.browser-default):not([readonly]),.form-wrap input[type="url"]:focus:not(.browser-default):not([readonly]), input[type="time"]:focus:not(.browser-default):not([readonly]),.form-wrap input[type="date"]:focus:not(.browser-default):not([readonly]), input[type="datetime"]:focus:not(.browser-default):not([readonly]),.form-wrap input[type="datetime-local"]:focus:not(.browser-default):not([readonly]), input[type="tel"]:focus:not(.browser-default):not([readonly]),.form-wrap input[type="number"]:focus:not(.browser-default):not([readonly]), input[type="search"]:focus:not(.browser-default):not([readonly]),.form-wrap textarea.materialize-textarea:focus:not([readonly]){
+
+border-bottom: 1px solid #4285F4;
+box-shadow: 0 1px 0 0 #4285F4;  
+} */
+			.checkbox-blue-grey[type="checkbox"].filled-in:checked+span:not(.lever):after {
+			border: 2px solid #000000;
+			background-color: #0064C8;
+		  }
+		  .th-my{
+			padding: 5px 0px;
+		  }
+		  .td-my{
+			padding: 3px 0px;
+			margin: 0px;
+		  }
+		  .tr-my{
+			border-bottom: 0px;  /* solid rgba(0,0,0,0.12);*/
+		  }
+		   .mycheckboxeslabelstext {
+			color: #064F99;
+			font-weight:lighter;
+			font-size: 16px;
+			margin: 0px;
+		   }
+
+		   </style>
+		<div id="modal1" class="modal" tabindex="0" style="z-index: 1003; display: none; opacity: 1; top: 25%; bottom: 25%;  "> <!-- max-width: 500px; "> -->
+			<div class="modal-content">
+				<h4 style="margin-bottom: 0px;">
+				  <span style="width: 56px; height: 56px;" >
+					<svg
+					width="50"
+					height="50"
+					viewBox="0 0 13.229168 13.229167"
+					version="1.1"
+					id="svg891"
+				>
+				   <defs
+					  id="defs888" />
+				   <g
+					  id="layer1">
+					 <path
+						d="M 7.9312369,4.0480984 C 8.2574002,3.993203 8.5026396,3.7662276 8.5026396,3.4951269 c 0,-0.2698952 -0.2382473,-0.4974333 -0.5714027,-0.5528108 z"
+						style="fill:#064f99;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+						stroke-linecap="round"
+						id="path2358" />
+					 <path
+						d="m 7.0546473,2.0990346 c 0,0.269895 0.2382473,0.4973528 0.5715055,0.5528106 V 1.5459826 C 7.2998867,1.6008779 7.0546473,1.8278533 7.0546473,2.0990346 Z"
+						style="fill:#064f99;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+						stroke-linecap="round"
+						id="path2360" />
+					 <path
+						id="path2362-3"
+						style="fill:#064f99;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+						d="M 12.013111,0.26458363 H 3.5441757 c -0.2168594,0 -0.3926915,0.13743909 -0.3926915,0.30694741 V 5.0291406 c 0,0.1695082 0.1758321,0.3069474 0.3926915,0.3069474 H 4.585698 V 6.8554737 L 6.5663278,5.3361684 h 5.4466802 c 0.21686,0 0.392692,-0.1374396 0.392692,-0.3069475 V 0.57153104 C 12.405803,0.40202276 12.229971,0.26458363 12.013111,0.26458363 Z M 7.9457353,2.7012751 c 0.4972654,0.061406 0.8618856,0.3955998 0.8618856,0.7937714 0,0.4029137 -0.3813809,0.7366255 -0.8764868,0.7944947 v 0.227297 c 0,0.065827 -0.068277,0.1191948 -0.1525934,0.1191948 -0.084317,0 -0.1525934,-0.053368 -0.1525934,-0.1191948 V 4.2895412 C 7.1307384,4.2315917 6.7493575,3.8979602 6.7493575,3.4950465 c 0,-0.065906 0.068277,-0.1192741 0.1525935,-0.1192741 0.084317,0 0.1525934,0.053368 0.1525934,0.1192741 0,0.2711006 0.2453423,0.4980762 0.5715056,0.5529715 V 2.8948151 C 7.62194,2.8942526 7.61844,2.8936851 7.614127,2.8931251 7.1141832,2.8313191 6.7494602,2.4971261 6.7494602,2.0989545 c 0,-0.4029137 0.3813808,-0.7366256 0.8765896,-0.794575 V 1.0835923 c 0,-0.065907 0.068277,-0.11927472 0.1525935,-0.11927472 0.084317,0 0.1525934,0.0533681 0.1525934,0.11927472 v 0.2207868 c 0.4952088,0.057949 0.8764868,0.3916613 0.8764868,0.794575 0,0.065906 -0.068277,0.1192741 -0.1525934,0.1192741 -0.084317,0 -0.1525935,-0.053368 -0.1525935,-0.1192741 0,-0.2711008 -0.2452394,-0.4981566 -0.5714027,-0.5530518 v 1.1531224 c 0.00515,8.036e-4 0.00926,0.00145 0.014601,0.00224 z m -3.896839,4.397907 c -0.1264458,0 -0.228825,0.079042 -0.228825,0.1770301 v 5.4508258 c 0,0.01477 0.00257,0.02958 0.00696,0.04329 v 0.03479 c 0,0.06893 0.071073,0.125235 0.1592498,0.125235 h 0.9531795 c 0.036157,10e-7 0.069098,-0.0097 0.095859,-0.02551 h 0.3803442 c 0.1264966,0 0.2288248,-0.07983 0.2288248,-0.177803 V 7.2762122 c 0,-0.097997 -0.1023653,-0.1770301 -0.2288248,-0.1770301 z M 2.3373477,9.774733 c -0.088178,0 -0.1592497,0.055537 -0.1592497,0.1244621 v 2.9059219 c 0,0.06893 0.071073,0.125236 0.1592497,0.125236 h 0.9531795 c 0.088178,0 0.1592497,-0.05631 0.1592497,-0.125236 V 9.8991952 c 0,-0.068925 -0.071073,-0.1244621 -0.1592497,-0.1244621 z m 0,0.090447 H 2.5182431 L 2.2940565,9.933982 V 9.899195 c 0,-0.018785 0.019259,-0.034015 0.043291,-0.034015 z m 0.4993949,0 h 0.4537846 c 0.024033,0 0.043292,0.01523 0.043292,0.034015 v 0.080398 l -1.0397627,0.316954 v -0.265932 z m 0.4970758,0.211818 v 0.265932 l -1.0397619,0.316953 v -0.265931 z m 0,0.363337 v 0.265159 l -1.0397619,0.316953 v -0.265931 z m 4.5061503,0.226506 c -0.092667,0 -0.1677534,0.05693 -0.1677534,0.126781 v 2.004537 c 0,0.06985 0.075013,0.126009 0.1677534,0.126009 h 1.0018821 c 0.092655,0 0.1677533,-0.05616 0.1677533,-0.126009 v -2.004537 c 0,-0.06985 -0.075034,-0.126781 -0.1677533,-0.126781 z m -7.15077892,0.03556 c -0.088178,0 -0.16002283,0.05631 -0.16002283,0.125236 v 1.97748 c 0,0.06893 0.0718447,0.125236 0.16002283,0.125236 H 1.6415962 c 0.088178,0 0.1600228,-0.05631 0.1600228,-0.125236 v -1.97748 c 0,-0.06893 -0.071845,-0.125236 -0.1600228,-0.125236 z m 7.14614052,0.05643 c 0.00154,-1.18e-4 0.00305,0 0.00464,0 h 1.0018821 c 0.025288,0 0.04561,0.01573 0.04561,0.03479 v 2.004537 c 0,0.01905 -0.020323,0.03402 -0.04561,0.03402 H 7.8399687 c -0.025288,0 -0.04561,-0.01497 -0.04561,-0.03402 v -2.004537 c 0,-0.01785 0.017895,-0.03302 0.040972,-0.03479 z m -7.15077887,0.03479 c 0.001463,-1.16e-4 0.003137,0 0.004639,0 H 1.6415962 c 0.024033,0 0.043292,0.01523 0.043292,0.03402 v 1.97748 c 0,0.01879 -0.019259,0.03402 -0.043292,0.03402 H 0.68918978 c -0.0240327,0 -0.0440643,-0.01523 -0.0440643,-0.03402 v -1.97748 c 0,-0.01761 0.0174807,-0.03227 0.0394259,-0.03402 z m 2.64926697,0.0093 v 0.265934 l -1.0397619,0.316953 v -0.265931 z m 0,0.363337 v 0.26516 l -1.0397619,0.317727 v -0.265932 z m 2.8680421,0.203314 c -0.084617,0.0045 -0.1507461,0.04226 -0.1507461,0.08736 v 1.379909 c 0,0.0481 0.075015,0.08736 0.1677533,0.08736 h 1.0018821 c 0.092657,0 0.1677535,-0.03923 0.1677535,-0.08736 v -1.379907 c 0,-0.04809 -0.075013,-0.08736 -0.1677535,-0.08736 H 6.2188677 c -0.00579,0 -0.011369,-2.97e-4 -0.017008,0 z m 0.00773,0.06339 c 0.00298,-3.13e-4 0.00612,0 0.00927,0 h 1.0018821 c 0.025289,0 0.04561,0.0108 0.04561,0.02397 v 1.379908 c 0,0.01323 -0.020338,0.02397 -0.04561,0.02397 H 6.2188677 c -0.025289,0 -0.04561,-0.01079 -0.04561,-0.02397 v -1.379907 c 0,-0.01159 0.015479,-0.02177 0.036334,-0.02397 z m -2.8757727,0.09586 v 0.265932 l -1.0397654,0.316955 v -0.265932 z m 0,0.363337 v 0.26516 L 2.2940565,12.475022 V 12.20909 Z m 0,0.363337 v 0.265159 L 2.311063,12.832197 c -0.010202,-0.0062 -0.017007,-0.01616 -0.017007,-0.02706 v -0.233461 z m 0,0.362564 v 0.18708 c 0,0.01878 -0.019259,0.03402 -0.043291,0.03402 H 2.6071447 Z" />
+				   </g>
+						 
+				</svg> 
+			  </span>Large Trades Settings:</h2>
+			  <div class="divider"></div>
+			<hr style="width: 100%;">
+			<p class="mycheckboxeslabelstext"> Here you can adjust the settings for display <b>Large Trades</b> for the chart symbol.</p>
+
+			<p id="thesymbolinfoX" class="mycheckboxeslabelstext" style="font-weight: bolder;"></p>
+
+			<!-- DefaultMeanValueForSymbol -->
+			<hr style="width: 100%;">	
+  <!--
+				<hr style="width: 100%;">
+				<div class="divider"></div>
+			-->
+				<h4 style="margin-bottom: 0px;">&#9923; Large Trades</h4>
+				<hr style="width: 100%;">
+				<table class="centered">
+					<thead>
+					  <tr>
+						  <th class="th-my"><p class="mycheckboxeslabelstext" >  Show Trades <b>larger</b> than:</p></th>
+						  <th class="th-my"><p class="mycheckboxeslabelstext" >  Maximum <b>number</b> to show:</p></th>
+					 
+					  </tr>
+					</thead>
+					<tbody>
+					  <tr class="tr-my">
+						<td class="td-my"><div id="slider-format"></div></td>
+						<td class="td-my" style="font-size: 12px; padding-left: 30px; padding-right: 30px;">
+							<select id="mySelectForMaxNumberOfPlotTrades" class="blue-text text-darken-3" onchange="ChangeTheMaxNumberOfPlotTrades()" aria-label="label for the select">
+
+								<option class="blue-text text-darken-3"  value="100" >100 trades</option>
+								<option class="blue-text text-darken-3"  value="300" >300 trades</option>
+								<option class="blue-text text-darken-3"  value="500" selected>500 trades</option>
+								  <option class="blue-text text-darken-3"  value="1000">1000 trades</option>
+								  <option class="blue-text text-darken-3"  value="2000">2000 trades</option>
+							  </select>
+				
+						</td>
+				 
+					  </tr>
+					  <tr class="tr-my">
+<!--						<td class="td-my" style="width: 300px;"><input style="height: 2rem;" title="Formatted number" id="input-format"></td>
+-->
+					 <td class="td-my"><p id="thelabelforlargetradeslimit" style="width: 350px; padding-left: 3px; padding-right: 3px; font-size: 14px; color: black;" class="mycheckboxeslabelstext"> </p></td>
+
+						<td class="td-my" style="width: 300px;"><p class="mycheckboxeslabelstext" style="width: 240px; padding-left: 30px; padding-right: 30px; font-size: 12px; color: black;"> For <b>performace reasons</b>, don't overplot trades that you may are not interested (!)</p></td>
+					 
+					  </tr>
+				 
+					</tbody>
+				  </table>
+
+			 
+				  <!--	<div class="row">
+					<div class="col s12">This div is 12-columns wide on all screen sizes</div>
+					<div class="col s6">6-columns (one-half)</div>
+					<div class="col s6">6-columns (one-half)</div>
+				  </div> -->
+			  <!--		<hr style="width: 100%;">
+				<p class="mycheckboxeslabelstext" style="width: 300px; align-content: center;">  Show Trades <b>larger</b> than:</span></p>
+				  
+			
+				  <div id="slider-format"></div>
+					  <input title="Formatted number" id="input-format">
+					  -->  
+				<hr style="width: 100%;">
+				<h4 style="margin-bottom: 0px;">&#9432; Labels for the Large Trades</h4>
+				<hr style="width: 100%;"><span>
+
+					<table class="centered">
+						<thead>
+						  <tr>
+							  <th class="th-my"><p class="mycheckboxeslabelstext">Display label ?</p></th>
+							  <th class="th-my"><p class="mycheckboxeslabelstext">Select the info - details:</p></th>
+						 
+						  </tr>
+						</thead>
+						<tbody>
+						  <tr class="tr-my">
+							<td class="td-my" style="padding: 10px; ">
+								<label style=" font-weight:bold; color: #064F99;">
+								<input id="mycheckforshowlabels" onchange="CheckShowLabels(this)" type="checkbox" class="filled-in checkbox-blue-grey" checked="checked" />
+							 	 <span>Show Labels</span>
+								</label>
+							</td>
+							<td class="td-my" style="font-size: 12px; padding-left: 30px; padding-right: 30px;">
+								<label style=" font-weight:bold; color: #064F99;">
+									<input id="mycheckforshowdatetimelabels" onchange="CheckShowDateTime(this)" type="checkbox" class="filled-in checkbox-blue-grey"  />
+								  <span>Show Date/Time</span>
+								</label>
+					
+							</td>
+					 
+						  </tr>
+						  <tr class="tr-my">
+							<td class="td-my" style="width: 250px;">
+								<div class="input-field col s3 " style="width: 170px; margin: 0px; padding-left: 55px; padding-right: 0px;">
+									<p class="mycheckboxeslabelstext">Select Font Size:</p>
+										 <select id="mySelectForTextSizeLabels" class="blue-text text-darken-3" onchange="ChangeTheFontSizeForLables()" aria-label="label for the select">
+					
+									<option class="blue-text text-darken-3"  value="8" >8 pt</option>
+									<option class="blue-text text-darken-3"  value="10" >10 pt</option>
+									<option class="blue-text text-darken-3"  value="12" selected>12 pt</option>
+									  <option class="blue-text text-darken-3"  value="14">14 pt</option>
+									  <option class="blue-text text-darken-3"  value="16">16 pt</option>
+								  </select>
+					
+								 
+							 
+						  
+								  </div>
+							</td>
+							<td class="td-my" >
+								<label style=" font-weight:bold; color: #064F99;">
+									<input style="background-color: black;" id="mycheckforshowpricelabels" onchange="CheckShowPriceLabels(this)" type="checkbox" class="filled-in checkbox-blue-grey" checked="checked" />
+									<span>Show Exact quantity</span>
+								  </label>
+								</td>
+						 
+						  </tr>
+					<!--	  <tr class="tr-my">
+							<td class="td-my" ></td>
+							<td class="td-my" >
+								
+								</td>
+						 
+						  </tr> -->
+						  
+					 
+						</tbody>
+					  </table>	
+
+
+
+				 
+			 
+			 
+
+			 
+			  <hr style="width: 100%;">
+	  
+			  </div>
+			  <hr style="width: 100%;">
+			  <div class="modal-footer">
+			  <!--  <a href="#!" class="modal-close waves-effect waves-red btn-flat">Disagree</a> -->
+				<a href="#" class="modal-close waves-effect waves-green btn-flat">Close</a>
+			  </div>
+
+		  </div>
+
+
+		  <div id="modal2" class="modal" tabindex="0" style="z-index: 1003; display: none; opacity: 1; top: 25%; bottom: 25%;  "> <!-- max-width: 500px; "> -->
+			<div class="modal-content">
+				<h4 style="margin-bottom: 0px;">
+				  <span style="width: 56px; height: 56px;" >
+					<svg
+					width="50"
+					height="50"
+					viewBox="0 0 13.229168 13.229167"
+					version="1.1"
+					id="svg891"
+				>
+				   <defs
+					  id="defs888" />
+				   <g
+					  id="layer1">
+					 <path
+						d="M 7.9312369,4.0480984 C 8.2574002,3.993203 8.5026396,3.7662276 8.5026396,3.4951269 c 0,-0.2698952 -0.2382473,-0.4974333 -0.5714027,-0.5528108 z"
+						style="fill:#064f99;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+						stroke-linecap="round"
+						id="path2358" />
+					 <path
+						d="m 7.0546473,2.0990346 c 0,0.269895 0.2382473,0.4973528 0.5715055,0.5528106 V 1.5459826 C 7.2998867,1.6008779 7.0546473,1.8278533 7.0546473,2.0990346 Z"
+						style="fill:#064f99;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+						stroke-linecap="round"
+						id="path2360" />
+					 <path
+						id="path2362-3"
+						style="fill:#064f99;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+						d="M 12.013111,0.26458363 H 3.5441757 c -0.2168594,0 -0.3926915,0.13743909 -0.3926915,0.30694741 V 5.0291406 c 0,0.1695082 0.1758321,0.3069474 0.3926915,0.3069474 H 4.585698 V 6.8554737 L 6.5663278,5.3361684 h 5.4466802 c 0.21686,0 0.392692,-0.1374396 0.392692,-0.3069475 V 0.57153104 C 12.405803,0.40202276 12.229971,0.26458363 12.013111,0.26458363 Z M 7.9457353,2.7012751 c 0.4972654,0.061406 0.8618856,0.3955998 0.8618856,0.7937714 0,0.4029137 -0.3813809,0.7366255 -0.8764868,0.7944947 v 0.227297 c 0,0.065827 -0.068277,0.1191948 -0.1525934,0.1191948 -0.084317,0 -0.1525934,-0.053368 -0.1525934,-0.1191948 V 4.2895412 C 7.1307384,4.2315917 6.7493575,3.8979602 6.7493575,3.4950465 c 0,-0.065906 0.068277,-0.1192741 0.1525935,-0.1192741 0.084317,0 0.1525934,0.053368 0.1525934,0.1192741 0,0.2711006 0.2453423,0.4980762 0.5715056,0.5529715 V 2.8948151 C 7.62194,2.8942526 7.61844,2.8936851 7.614127,2.8931251 7.1141832,2.8313191 6.7494602,2.4971261 6.7494602,2.0989545 c 0,-0.4029137 0.3813808,-0.7366256 0.8765896,-0.794575 V 1.0835923 c 0,-0.065907 0.068277,-0.11927472 0.1525935,-0.11927472 0.084317,0 0.1525934,0.0533681 0.1525934,0.11927472 v 0.2207868 c 0.4952088,0.057949 0.8764868,0.3916613 0.8764868,0.794575 0,0.065906 -0.068277,0.1192741 -0.1525934,0.1192741 -0.084317,0 -0.1525935,-0.053368 -0.1525935,-0.1192741 0,-0.2711008 -0.2452394,-0.4981566 -0.5714027,-0.5530518 v 1.1531224 c 0.00515,8.036e-4 0.00926,0.00145 0.014601,0.00224 z m -3.896839,4.397907 c -0.1264458,0 -0.228825,0.079042 -0.228825,0.1770301 v 5.4508258 c 0,0.01477 0.00257,0.02958 0.00696,0.04329 v 0.03479 c 0,0.06893 0.071073,0.125235 0.1592498,0.125235 h 0.9531795 c 0.036157,10e-7 0.069098,-0.0097 0.095859,-0.02551 h 0.3803442 c 0.1264966,0 0.2288248,-0.07983 0.2288248,-0.177803 V 7.2762122 c 0,-0.097997 -0.1023653,-0.1770301 -0.2288248,-0.1770301 z M 2.3373477,9.774733 c -0.088178,0 -0.1592497,0.055537 -0.1592497,0.1244621 v 2.9059219 c 0,0.06893 0.071073,0.125236 0.1592497,0.125236 h 0.9531795 c 0.088178,0 0.1592497,-0.05631 0.1592497,-0.125236 V 9.8991952 c 0,-0.068925 -0.071073,-0.1244621 -0.1592497,-0.1244621 z m 0,0.090447 H 2.5182431 L 2.2940565,9.933982 V 9.899195 c 0,-0.018785 0.019259,-0.034015 0.043291,-0.034015 z m 0.4993949,0 h 0.4537846 c 0.024033,0 0.043292,0.01523 0.043292,0.034015 v 0.080398 l -1.0397627,0.316954 v -0.265932 z m 0.4970758,0.211818 v 0.265932 l -1.0397619,0.316953 v -0.265931 z m 0,0.363337 v 0.265159 l -1.0397619,0.316953 v -0.265931 z m 4.5061503,0.226506 c -0.092667,0 -0.1677534,0.05693 -0.1677534,0.126781 v 2.004537 c 0,0.06985 0.075013,0.126009 0.1677534,0.126009 h 1.0018821 c 0.092655,0 0.1677533,-0.05616 0.1677533,-0.126009 v -2.004537 c 0,-0.06985 -0.075034,-0.126781 -0.1677533,-0.126781 z m -7.15077892,0.03556 c -0.088178,0 -0.16002283,0.05631 -0.16002283,0.125236 v 1.97748 c 0,0.06893 0.0718447,0.125236 0.16002283,0.125236 H 1.6415962 c 0.088178,0 0.1600228,-0.05631 0.1600228,-0.125236 v -1.97748 c 0,-0.06893 -0.071845,-0.125236 -0.1600228,-0.125236 z m 7.14614052,0.05643 c 0.00154,-1.18e-4 0.00305,0 0.00464,0 h 1.0018821 c 0.025288,0 0.04561,0.01573 0.04561,0.03479 v 2.004537 c 0,0.01905 -0.020323,0.03402 -0.04561,0.03402 H 7.8399687 c -0.025288,0 -0.04561,-0.01497 -0.04561,-0.03402 v -2.004537 c 0,-0.01785 0.017895,-0.03302 0.040972,-0.03479 z m -7.15077887,0.03479 c 0.001463,-1.16e-4 0.003137,0 0.004639,0 H 1.6415962 c 0.024033,0 0.043292,0.01523 0.043292,0.03402 v 1.97748 c 0,0.01879 -0.019259,0.03402 -0.043292,0.03402 H 0.68918978 c -0.0240327,0 -0.0440643,-0.01523 -0.0440643,-0.03402 v -1.97748 c 0,-0.01761 0.0174807,-0.03227 0.0394259,-0.03402 z m 2.64926697,0.0093 v 0.265934 l -1.0397619,0.316953 v -0.265931 z m 0,0.363337 v 0.26516 l -1.0397619,0.317727 v -0.265932 z m 2.8680421,0.203314 c -0.084617,0.0045 -0.1507461,0.04226 -0.1507461,0.08736 v 1.379909 c 0,0.0481 0.075015,0.08736 0.1677533,0.08736 h 1.0018821 c 0.092657,0 0.1677535,-0.03923 0.1677535,-0.08736 v -1.379907 c 0,-0.04809 -0.075013,-0.08736 -0.1677535,-0.08736 H 6.2188677 c -0.00579,0 -0.011369,-2.97e-4 -0.017008,0 z m 0.00773,0.06339 c 0.00298,-3.13e-4 0.00612,0 0.00927,0 h 1.0018821 c 0.025289,0 0.04561,0.0108 0.04561,0.02397 v 1.379908 c 0,0.01323 -0.020338,0.02397 -0.04561,0.02397 H 6.2188677 c -0.025289,0 -0.04561,-0.01079 -0.04561,-0.02397 v -1.379907 c 0,-0.01159 0.015479,-0.02177 0.036334,-0.02397 z m -2.8757727,0.09586 v 0.265932 l -1.0397654,0.316955 v -0.265932 z m 0,0.363337 v 0.26516 L 2.2940565,12.475022 V 12.20909 Z m 0,0.363337 v 0.265159 L 2.311063,12.832197 c -0.010202,-0.0062 -0.017007,-0.01616 -0.017007,-0.02706 v -0.233461 z m 0,0.362564 v 0.18708 c 0,0.01878 -0.019259,0.03402 -0.043291,0.03402 H 2.6071447 Z" />
+				   </g>
+						 
+				</svg> 
+			  </span>Liquidation Levels Settings:</h2>
+			  <div class="divider"></div>
+			<hr style="width: 100%;">
+			<p class="mycheckboxeslabelstext"> Here you can adjust the settings for the  <b>liquidations levels</b> on the chart.</p>
+
+			<p id="thesymbolinfoX" class="mycheckboxeslabelstext" style="font-weight: bolder;"></p>
+
+			<!-- DefaultMeanValueForSymbol -->
+			<hr style="width: 100%;">	
+  <!--
+				<hr style="width: 100%;">
+				<div class="divider"></div>
+			-->
+				<h4 style="margin-bottom: 0px;">&#9923; Liquidation Levels</h4>
+				<table class="centered">
+					<thead>
+					  <tr>
+						  <th class="th-my"><p class="mycheckboxeslabelstext" >  Give a <b>Limit/Threshold</b> (million $):</p></th>
+				 		 
+					  </tr>
+					</thead>
+					<tbody>
+						<tr class="tr-my">
+							<td class="td-my" style="padding: 10px; ">
+								<label style=" font-weight:bold; color: #064F99;">
+								<!--<input id="mycheckforshowlabels" onchange="CheckShowLiqLevels100xSHORTS(this)" type="checkbox" class="filled-in checkbox-blue-grey" checked="checked" />
+								--> 
+								<input style="width: 50px;"  id="liqlevelsthresholdinput"
+								inputmode="decimal"
+						                oninput="valid(this)"
+						                type="text">
+							
+										<a alt="Apply Threshold"  class=" waves-effect waves-light z-depth-4  " style="background: #275099; width: 104px; height: 47px; margin-left: 20px;">
+											<!--   <svg xmlns="http://www.w3.org/2000/svg" height="56" width="56" viewBox="0 0 56 56">
+												   <g>
+													   <ellipse cy="28" cx="28" stroke-width="1.875" ry="27.0625" rx="27.0625" stroke="#FFFFFF" fill="transparent" />
+													  
+													  </g>
+													  
+											   </svg> -->
+											 
+											   <p  class="mycheckboxeslabelstext" style="position: inherit;font-weight: lighter;font-size: 12px;color: whitesmoke; width: 90px;text-align: center;left: 0px;right: 0px;top: 1px;">Apply</p>
+											<div style="width: 80px; margin-left: 10px; height: 1px; background: rgba(255,255,255,0.6);"></div>
+										 	<p id="pathexpand" class="mycheckboxeslabelstext" style="position: inherit;font-weight:lighter;font-size: 24px;color: whitesmoke; width: 90px;text-align: center;left: 0px;right: 0px;top: 1px;">↪</p>
+								 
+										   </a>
+
+								</label> 
+						 
+							</td>
+						</tr>
+						<tr class="tr-my">
+							<td class="td-my" style="padding: 10px; ">
+								<span>use '.' not ',' for decimal places (e.g. 0.1) </span>
+							</td>
+						</tr>
+
+			
+					</tbody>
+				  </table>
+
+
+
+				<hr style="width: 100%;">
+				<table class="centered">
+					<thead>
+					  <tr>
+						  <th class="th-my"><p class="mycheckboxeslabelstext" >  Select which <b>Liquidation Levels</b> to display:</p></th>
+				 		 
+					  </tr>
+					</thead>
+					<tbody>
+						<tr class="tr-my">
+							<td class="td-my" style="padding: 10px; ">
+								<label style=" font-weight:bold; color: #064F99;">
+								<input id="mycheckforshowlabels"   type="checkbox" class="filled-in checkbox-blue-grey" checked="checked" />
+								  <span>Show 100x Shorts</span>
+								</label>
+							</td>
+						</tr>
+						
+						
+						<tr class="tr-my">
+							<td class="td-my" style="padding: 10px; ">
+								<label style=" font-weight:bold; color: #064F99;">
+								<input id="mycheckforshowlabels"  type="checkbox" class="filled-in checkbox-blue-grey" checked="checked" />
+								  <span>Show 100x Longs</span>
+								</label>
+							</td>
+						</tr>
+					
+						
+				 
+					</tbody>
+				  </table>
+
+			 
+				  <!--	<div class="row">
+					<div class="col s12">This div is 12-columns wide on all screen sizes</div>
+					<div class="col s6">6-columns (one-half)</div>
+					<div class="col s6">6-columns (one-half)</div>
+				  </div> -->
+			  <!--		<hr style="width: 100%;">
+				<p class="mycheckboxeslabelstext" style="width: 300px; align-content: center;">  Show Trades <b>larger</b> than:</span></p>
+				  
+			
+				  <div id="slider-format"></div>
+					  <input title="Formatted number" id="input-format">
+					  -->  
+				<hr style="width: 100%;">
+			 	 
+			  <hr style="width: 100%;">
+	  
+			  </div>
+			  <hr style="width: 100%;">
+			  <div class="modal-footer">
+			  <!--  <a href="#!" class="modal-close waves-effect waves-red btn-flat">Disagree</a> -->
+				<a href="#" class="modal-close waves-effect waves-green btn-flat">Close</a>
+			  </div>
+
+		  </div>
+
+
+
+
+		<style>
+[id^=resize_wrapper] 
+{
+      position: absolute;
+      top: 4em;
+      left: 1em;
+      right: 1em;
+      bottom: 1em;
+}
+
+.mytablecompact td {
+    padding: 0px;
+}
+
+.mytablecompact tdgreen {
+    padding: 0px;
+    background-color: green;
+}
+
+.mytablecompact tdred {
+    padding: 0px;
+    background-color: red;
+    
+}
+
+
+.list-group-item
+{
+	position: relative;
+	width: 150px;
+    display: block;
+    padding: 0; 
+    color: #212529;
+    text-decoration: none;
+    background-color: #fff;
+    border: 2px solid rgba(0,0,0,.8);
+}
+
+.list-group{
+     max-height: calc((100% - 85px));
+	
+	 /*
+   max-height: 500px;
+     margin-bottom: 1px;
+    overflow:scroll;
+    -webkit-overflow-scrolling: touch; */
+/*	max-height: 300px; */
+    margin-bottom: 10px;
+/*    overflow:scroll; */
+	overflow-y:auto;
+    -webkit-overflow-scrolling: touch;
+}
+.myblue {
+	background-color: #0078b7 !important
+}
+.lightRed {
+  background-color: #f0aaaa !important
+}
+
+.columnleft {
+  float: left;
+  width: 5px;
+  padding: 0px;
+  height: 100%; /* 300px; /* Should be removed. Only for demonstration */
+}
+.columnright {
+  float: right;
+  width: 175px;
+  margin-top: 1px;
+  padding: 0px;
+  z-index: 1000;
+  position: sticky;
+  
+
+  /*  max-height: calc((100% - 65px - 85px));
+
+
+  */
+  max-height: calc((100% - 10px - 85px));
+ 
+/*  height:  100%; /* 300px; /* Should be removed. Only for demonstration */
+}
+
+.mylefft {
+	max-height: calc((100% - 2px));
+/*	max-height: calc((100% - 70px)); */
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+ /* width: 25%;*/
+  width: calc((100% - 180px));
+  padding: 0px;
+  height: 100% /* 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+		</style>
+ 
+<!--		<div  id="header" style="width:100%; height:65px; position:fixed;">
+	-->		
+		<div  id="header" style="width:550px; height:48px; position:fixed; margin-left: 1px; background-color: rgb(242, 242, 242);">
+		
+			<div class="container" style="margin: 0px;">
+				<div class="row">
+					<div>
+
+					
+					<a alt="Options Page !" id="go-to-options"  class="btn-floating waves-effect waves-light  btn-medium" 
+					style="margin-left: -10px; margin-top: 4px; margin-bottom:5px; background: #0078B7 ">
+						<svg xmlns="http://www.w3.org/2000/svg" height="38" width="56" viewBox="12 0 56 56">
+						  <g>
+							  <ellipse cy="28" cx="28" stroke-width="1.87499977648261" ry="27.0625001117587" rx="27.0625001117587" stroke="#FFFFFF" fill="transparent"></ellipse>
+							  <path id="path1" transform="rotate(0,28,28) translate(10,6) scale(0.1,0.1)  " fill="#FFFFFF" d="M 8.2058214,0.26458338 H 2.544605 c -0.1449637,0 -0.2625019,0.0918737 -0.2625019,0.20518467 V 3.4495395 c 0,0.1133109 0.1175382,0.2051847 0.2625019,0.2051847 H 3.2408298 V 4.6703856 L 4.5648184,3.6547779 h 3.6409342 c 0.1449638,0 0.262502,-0.091874 0.262502,-0.2051847 V 0.46976805 C 8.4683233,0.35645711 8.3507851,0.26458338 8.2058214,0.26458338 Z M 5.4869088,1.8934348 c 0.3324063,0.041048 0.5761434,0.264446 0.5761434,0.5306112 0,0.2693351 -0.2549411,0.4924109 -0.5859038,0.5310946 v 0.1519409 c 0,0.044003 -0.045641,0.079678 -0.1020039,0.079678 -0.056363,0 -0.1020039,-0.035675 -0.1020039,-0.079678 V 2.9551406 C 4.9421091,2.9164032 4.687168,2.6933811 4.687168,2.424046 c 0,-0.044056 0.045641,-0.079731 0.1020039,-0.079731 0.056363,0 0.1020039,0.035675 0.1020039,0.079731 0,0.1812222 0.1640036,0.3329482 0.3820335,0.369644 V 2.0228102 c -0.00275,-3.76e-4 -0.00509,-7.521e-4 -0.00797,-0.00113 -0.3341967,-0.041315 -0.5780025,-0.2647128 -0.5780025,-0.530878 0,-0.2693351 0.254941,-0.49241095 0.5859725,-0.53114836 V 0.81206487 c 0,-0.0440564 0.045641,-0.0797314 0.1020039,-0.0797314 0.056363,0 0.1020039,0.0356749 0.1020039,0.0797314 v 0.14758897 c 0.3310315,0.0387374 0.5859038,0.26181326 0.5859038,0.53114836 0,0.044056 -0.045641,0.079731 -0.1020039,0.079731 -0.056363,0 -0.1020039,-0.035675 -0.1020039,-0.079731 0,-0.1812223 -0.1639348,-0.333002 -0.3819647,-0.3696977 v 0.770826 c 0.00344,5.372e-4 0.00619,9.671e-4 0.00976,0.0015 z M 2.8819948,4.833297 c -0.084525,0 -0.1529623,0.052837 -0.1529623,0.118339 v 3.6437055 c 0,0.00987 0.00172,0.019772 0.00465,0.028939 v 0.023254 c 0,0.046075 0.04751,0.083716 0.1064535,0.083716 h 0.6371704 c 0.02417,2e-7 0.04619,-0.00647 0.064079,-0.017053 h 0.2542481 c 0.084559,0 0.1529622,-0.053361 0.1529622,-0.1188558 V 4.951636 c 0,-0.065508 -0.068428,-0.118339 -0.1529622,-0.118339 z M 1.7378785,6.6218184 c -0.058944,0 -0.1064534,0.037125 -0.1064534,0.083199 v 1.9425172 c 0,0.046074 0.04751,0.083716 0.1064534,0.083716 H 2.375049 c 0.058944,0 0.1064534,-0.037641 0.1064534,-0.083716 V 6.7050175 c 0,-0.046074 -0.04751,-0.083199 -0.1064534,-0.083199 z m 0,0.060461 h 0.1209229 l -0.1498617,0.045992 v -0.023254 c 0,-0.012557 0.012874,-0.022738 0.028939,-0.022738 z m 0.3338298,0 H 2.375049 c 0.016065,0 0.028939,0.010181 0.028939,0.022738 V 6.758761 L 1.7089397,6.9706344 V 6.7928674 Z M 2.4039878,6.8238733 V 7.0016402 L 1.7089397,7.2135136 V 7.0357467 Z m 0,0.2428792 V 7.2440027 L 1.7089397,7.4558761 v -0.177767 z m 3.0122194,0.151412 c -0.061945,0 -0.1121379,0.038057 -0.1121379,0.084749 v 1.33997 c 0,0.046689 0.050144,0.084233 0.1121379,0.084233 h 0.6697266 c 0.061937,0 0.1121378,-0.037543 0.1121378,-0.084233 v -1.33997 c 0,-0.046694 -0.050158,-0.084749 -0.1121378,-0.084749 z m -4.78007028,0.023771 c -0.0589442,0 -0.10697022,0.037641 -0.10697022,0.083716 v 1.3218832 c 0,0.046074 0.0480259,0.083716 0.10697022,0.083716 H 1.2727906 c 0.058944,0 0.1069702,-0.037641 0.1069702,-0.083716 V 7.3256515 c 0,-0.046074 -0.048026,-0.083716 -0.1069702,-0.083716 z m 4.77696968,0.037724 c 0.00103,-7.87e-5 0.00204,0 0.0031,0 h 0.6697266 c 0.016904,0 0.030489,0.010518 0.030489,0.023254 v 1.33997 c 0,0.012732 -0.013585,0.022738 -0.030489,0.022738 h -0.669726 c -0.016904,0 -0.030489,-0.010006 -0.030489,-0.022738 v -1.33997 c 0,-0.011932 0.011962,-0.022073 0.027388,-0.023254 z m -4.78007027,0.023254 c 9.7798e-4,-7.77e-5 0.002097,0 0.003101,0 H 1.2727906 c 0.016065,0 0.028939,0.010181 0.028939,0.022738 v 1.3218832 c 0,0.012557 -0.012874,0.022738 -0.028939,0.022738 H 0.63613692 c -0.0160651,0 -0.0294556,-0.01018 -0.0294556,-0.022738 V 7.3256515 c 0,-0.011772 0.0116853,-0.021572 0.026355,-0.022738 z m 1.77095147,0.0062 V 7.4868819 L 1.7089397,7.6987553 V 7.5209884 Z m 0,0.2428792 V 7.7292444 L 1.7089397,7.9416346 v -0.177767 z m 1.9171957,0.1359091 c -0.056564,0.00298 -0.100769,0.028248 -0.100769,0.058394 V 8.668722 c 0,0.032151 0.050145,0.058394 0.1121378,0.058394 h 0.6697266 c 0.061938,0 0.1121379,-0.026227 0.1121379,-0.058394 V 7.7462976 c 0,-0.032144 -0.050144,-0.058395 -0.1121379,-0.058394 H 4.3325523 c -0.00387,0 -0.0076,-1.988e-4 -0.011369,0 z m 0.00517,0.042375 c 0.00199,-2.095e-4 0.00409,0 0.0062,0 h 0.6697266 c 0.016905,0 0.030489,0.00722 0.030489,0.01602 V 8.668722 c 0,0.00884 -0.013595,0.01602 -0.030489,0.01602 H 4.3325523 c -0.016905,0 -0.030489,-0.00721 -0.030489,-0.01602 V 7.7462976 c 0,-0.00775 0.010347,-0.014553 0.024288,-0.01602 z m -1.9223634,0.064079 v 0.177767 L 1.7089397,8.1839971 v -0.177767 z m 0,0.2428793 v 0.177251 L 1.7089397,8.4268763 V 8.2491094 Z m 0,0.2428792 v 0.1772502 l -0.6836793,0.208256 c -0.00682,-0.00416 -0.011369,-0.010803 -0.011369,-0.018087 V 8.4914718 Z m 0,0.2423625 v 0.125057 c 0,0.012557 -0.012874,0.022738 -0.028939,0.022738 H 1.9182293 Z"></path>
+							</g>
+						  
+							
+					  </svg>
+					  <img src="/css/settings.svg" style="margin-bottom: 30px;
+					  margin-top: -52px;
+					  margin-left: 6px;
+					  width: 28px;
+					  height: 28px;" />
+						
+						</a>
+					
+</div>
+<div style="padding-top:14px; padding-left: 7px; color: #0078B7;">
+	<td style="padding:0px; color: #0078B7;">Settings</td>
+
+</div>
+		<!--	<div class="inner" style="width: 46px; height: 46px;"><svg style="margin:auto;background:rgb(242, 242, 242);display:block;" width="46px" height="46px" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid">
+				<g transform="rotate(180 50 50)"><rect x="15" y="15" width="10" height="40" fill="#0078b7">
+				<animate attributeName="height" values="50;70;30;50" keyTimes="0;0.33;0.66;1" dur="25s" repeatCount="indefinite" calcMode="spline" keySplines="0.5 0 0.5 1;0.5 0 0.5 1;0.5 0 0.5 1" begin="-10s"></animate>
+				</rect><rect x="35" y="15" width="10" height="40" fill="#0090DC">
+				<animate attributeName="height" values="50;70;30;50" keyTimes="0;0.33;0.66;1" dur="25s" repeatCount="indefinite" calcMode="spline" keySplines="0.5 0 0.5 1;0.5 0 0.5 1;0.5 0 0.5 1" begin="-5s"></animate>
+				</rect><rect x="55" y="15" width="10" height="40" fill="#65C3F5">
+				<animate attributeName="height" values="50;70;30;50" keyTimes="0;0.33;0.66;1" dur="25s" repeatCount="indefinite" calcMode="spline" keySplines="0.5 0 0.5 1;0.5 0 0.5 1;0.5 0 0.5 1" begin="-15s"></animate>
+				</rect><rect x="75" y="15" width="10" height="40" fill="#006093">
+				<animate attributeName="height" values="50;70;30;50" keyTimes="0;0.33;0.66;1" dur="25s" repeatCount="indefinite" calcMode="spline" keySplines="0.5 0 0.5 1;0.5 0 0.5 1;0.5 0 0.5 1" begin="-25s"></animate>
+				</rect></g>
+				</svg></div>	
+				-->
+				<img alt="Crypto Screener+" src="css/version.svg" style="margin-left: 70px; margin-top: 10px; width: 159px; height: 27px;" />
+				<img alt="Crypto Screener+" src="css/by.svg" style="margin-left: 50px; margin-top: 2px; width: 96px; height: 40px;" />
+				<div class="fixed-action-btn direction-top active " id="myredshare" style="top:  -25px; right:  -10px; visibility: visible;">
+					<a style=" width: 75px; height: 75px; top:  -5px; right:  -1px;" id="mlappslogo" class="btn btn-floating btn-large blue " > 
+					   <img style="height:50px; margin-top: 15px;" src="/icons/mlapplications.png" alt="the Mobility in Life Applications TEAM logo">
+					   </a>
+			 
+					 </div>
+				<div>
+				
+				</div>
+	</div>
+	</div>
+	 
+				<!--<a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>
+				-->
+			<!-- Switch -->
+			  <!-- Modal Trigger -->
+			 <!-- <span>
+				 Modal Trigger 
+  <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>
+
+				<button data-target="modal1" class="btn modal-trigger">Open Modal</button>
+				<button data-target="modal1" class="btn modal-trigger">Close Modal</button>
+			  </span>
+  -->
+</div>
+  <div id="mylefft"  class="page-lefft" style="bottom: 20px; height: 465px; visibility: visible; width:550px; position:fixed;  top: 49px; margin: 0px; padding: 0px;  left:0; background-color: whitesmoke;">
+    <table id="example22"  class="display nowrap w-60 dataTable " style="height: 100%; width: 100%;" aria-describedby="example_info"></table>
+
+
+</div> 
+
+
+<style>
+    .page-footer {
+       position: fixed;
+       bottom: 0;
+       width: 100%;
+        text-align: center;
+    margin-left: auto;
+       margin-right: auto;
+       margin-bottom: 0px;
+       margin-top: 5px;
+     padding-bottom: 20px;
+   padding-top: 10px;
+     
+     }
+     .content-wrap {background: transparent;}
+     .content-wrap {background-color: transparent; }
+    </style>
+	<footer class="page-footer  footer-copyright row" position:="" fixed;="" style="background:rgb(200, 200, 200); height: 85px;">
+		<div class="container">
+            <div class="row">
+    <hr >
+	<div class="col s1">
+   
+       <button id="myadvancedbutton" data-target="modal1" class="addBtn  modal-trigger background-color: myblue">
+		<div><i style="margin-bottom: 2px; padding-top: 0px; margin-left: 80px;" class="tiny material-icons">open_in_new</i> <div>Advanced Screener..</div>  </div>
+		</button>
+	 
+     </div>  
+	 <div class="col s2 push-s2">
+		</div>
+<!--	 <div class="col s2">
+		<button data-target="modal1" class="addBtn  modal-trigger background-color: myblue">
+			<div><i style="margin-bottom: 2px; padding-top: -5px; margin-left: 80px;" class="tiny material-icons">open_in_new</i> <div>Screener+ ..</div>  </div>
+			</button>
+		 
+	
+	</div>    
+
+    <div class="col s12 push-s1">-->	
+		<div class="col s7 push-s3">
+      <table class="centered" style="color: #ffffff; font-size:14px; line-height:1px; text-align:center; width: auto; margin-left: auto; margin-right: auto">
+           <thead>
+               <tr style="padding:0px; border-bottom: 0px;">
+               
+           <!--     <th style="padding:0px">
+                        
+                  <img style="width: 6px; height:56px;" alt="a glossy vertcial bar" src="css/pngsss/myglossyvertical.png">
+                  
+                 </th>  -->
+               <!-- App -->
+                <th style="padding:1px">
+              <!--      <a alt="Options Page !" id="go-to-options"  class="btn-floating waves-effect waves-light  btn-medium" style="background: #0078B7">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="38" width="56" viewBox="12 0 56 56">
+                      <g>
+                          <ellipse cy="28" cx="28" stroke-width="1.87499977648261" ry="27.0625001117587" rx="27.0625001117587" stroke="#FFFFFF" fill="transparent"></ellipse>
+						  <path id="path1" transform="rotate(0,28,28) translate(10,6) scale(0.1,0.1)  " fill="#FFFFFF" d="M 8.2058214,0.26458338 H 2.544605 c -0.1449637,0 -0.2625019,0.0918737 -0.2625019,0.20518467 V 3.4495395 c 0,0.1133109 0.1175382,0.2051847 0.2625019,0.2051847 H 3.2408298 V 4.6703856 L 4.5648184,3.6547779 h 3.6409342 c 0.1449638,0 0.262502,-0.091874 0.262502,-0.2051847 V 0.46976805 C 8.4683233,0.35645711 8.3507851,0.26458338 8.2058214,0.26458338 Z M 5.4869088,1.8934348 c 0.3324063,0.041048 0.5761434,0.264446 0.5761434,0.5306112 0,0.2693351 -0.2549411,0.4924109 -0.5859038,0.5310946 v 0.1519409 c 0,0.044003 -0.045641,0.079678 -0.1020039,0.079678 -0.056363,0 -0.1020039,-0.035675 -0.1020039,-0.079678 V 2.9551406 C 4.9421091,2.9164032 4.687168,2.6933811 4.687168,2.424046 c 0,-0.044056 0.045641,-0.079731 0.1020039,-0.079731 0.056363,0 0.1020039,0.035675 0.1020039,0.079731 0,0.1812222 0.1640036,0.3329482 0.3820335,0.369644 V 2.0228102 c -0.00275,-3.76e-4 -0.00509,-7.521e-4 -0.00797,-0.00113 -0.3341967,-0.041315 -0.5780025,-0.2647128 -0.5780025,-0.530878 0,-0.2693351 0.254941,-0.49241095 0.5859725,-0.53114836 V 0.81206487 c 0,-0.0440564 0.045641,-0.0797314 0.1020039,-0.0797314 0.056363,0 0.1020039,0.0356749 0.1020039,0.0797314 v 0.14758897 c 0.3310315,0.0387374 0.5859038,0.26181326 0.5859038,0.53114836 0,0.044056 -0.045641,0.079731 -0.1020039,0.079731 -0.056363,0 -0.1020039,-0.035675 -0.1020039,-0.079731 0,-0.1812223 -0.1639348,-0.333002 -0.3819647,-0.3696977 v 0.770826 c 0.00344,5.372e-4 0.00619,9.671e-4 0.00976,0.0015 z M 2.8819948,4.833297 c -0.084525,0 -0.1529623,0.052837 -0.1529623,0.118339 v 3.6437055 c 0,0.00987 0.00172,0.019772 0.00465,0.028939 v 0.023254 c 0,0.046075 0.04751,0.083716 0.1064535,0.083716 h 0.6371704 c 0.02417,2e-7 0.04619,-0.00647 0.064079,-0.017053 h 0.2542481 c 0.084559,0 0.1529622,-0.053361 0.1529622,-0.1188558 V 4.951636 c 0,-0.065508 -0.068428,-0.118339 -0.1529622,-0.118339 z M 1.7378785,6.6218184 c -0.058944,0 -0.1064534,0.037125 -0.1064534,0.083199 v 1.9425172 c 0,0.046074 0.04751,0.083716 0.1064534,0.083716 H 2.375049 c 0.058944,0 0.1064534,-0.037641 0.1064534,-0.083716 V 6.7050175 c 0,-0.046074 -0.04751,-0.083199 -0.1064534,-0.083199 z m 0,0.060461 h 0.1209229 l -0.1498617,0.045992 v -0.023254 c 0,-0.012557 0.012874,-0.022738 0.028939,-0.022738 z m 0.3338298,0 H 2.375049 c 0.016065,0 0.028939,0.010181 0.028939,0.022738 V 6.758761 L 1.7089397,6.9706344 V 6.7928674 Z M 2.4039878,6.8238733 V 7.0016402 L 1.7089397,7.2135136 V 7.0357467 Z m 0,0.2428792 V 7.2440027 L 1.7089397,7.4558761 v -0.177767 z m 3.0122194,0.151412 c -0.061945,0 -0.1121379,0.038057 -0.1121379,0.084749 v 1.33997 c 0,0.046689 0.050144,0.084233 0.1121379,0.084233 h 0.6697266 c 0.061937,0 0.1121378,-0.037543 0.1121378,-0.084233 v -1.33997 c 0,-0.046694 -0.050158,-0.084749 -0.1121378,-0.084749 z m -4.78007028,0.023771 c -0.0589442,0 -0.10697022,0.037641 -0.10697022,0.083716 v 1.3218832 c 0,0.046074 0.0480259,0.083716 0.10697022,0.083716 H 1.2727906 c 0.058944,0 0.1069702,-0.037641 0.1069702,-0.083716 V 7.3256515 c 0,-0.046074 -0.048026,-0.083716 -0.1069702,-0.083716 z m 4.77696968,0.037724 c 0.00103,-7.87e-5 0.00204,0 0.0031,0 h 0.6697266 c 0.016904,0 0.030489,0.010518 0.030489,0.023254 v 1.33997 c 0,0.012732 -0.013585,0.022738 -0.030489,0.022738 h -0.669726 c -0.016904,0 -0.030489,-0.010006 -0.030489,-0.022738 v -1.33997 c 0,-0.011932 0.011962,-0.022073 0.027388,-0.023254 z m -4.78007027,0.023254 c 9.7798e-4,-7.77e-5 0.002097,0 0.003101,0 H 1.2727906 c 0.016065,0 0.028939,0.010181 0.028939,0.022738 v 1.3218832 c 0,0.012557 -0.012874,0.022738 -0.028939,0.022738 H 0.63613692 c -0.0160651,0 -0.0294556,-0.01018 -0.0294556,-0.022738 V 7.3256515 c 0,-0.011772 0.0116853,-0.021572 0.026355,-0.022738 z m 1.77095147,0.0062 V 7.4868819 L 1.7089397,7.6987553 V 7.5209884 Z m 0,0.2428792 V 7.7292444 L 1.7089397,7.9416346 v -0.177767 z m 1.9171957,0.1359091 c -0.056564,0.00298 -0.100769,0.028248 -0.100769,0.058394 V 8.668722 c 0,0.032151 0.050145,0.058394 0.1121378,0.058394 h 0.6697266 c 0.061938,0 0.1121379,-0.026227 0.1121379,-0.058394 V 7.7462976 c 0,-0.032144 -0.050144,-0.058395 -0.1121379,-0.058394 H 4.3325523 c -0.00387,0 -0.0076,-1.988e-4 -0.011369,0 z m 0.00517,0.042375 c 0.00199,-2.095e-4 0.00409,0 0.0062,0 h 0.6697266 c 0.016905,0 0.030489,0.00722 0.030489,0.01602 V 8.668722 c 0,0.00884 -0.013595,0.01602 -0.030489,0.01602 H 4.3325523 c -0.016905,0 -0.030489,-0.00721 -0.030489,-0.01602 V 7.7462976 c 0,-0.00775 0.010347,-0.014553 0.024288,-0.01602 z m -1.9223634,0.064079 v 0.177767 L 1.7089397,8.1839971 v -0.177767 z m 0,0.2428793 v 0.177251 L 1.7089397,8.4268763 V 8.2491094 Z m 0,0.2428792 v 0.1772502 l -0.6836793,0.208256 c -0.00682,-0.00416 -0.011369,-0.010803 -0.011369,-0.018087 V 8.4914718 Z m 0,0.2423625 v 0.125057 c 0,0.012557 -0.012874,0.022738 -0.028939,0.022738 H 1.9182293 Z"></path>
+                        </g>
+                      
+                        
+                  </svg>
+				  <img src="/css/settings.svg" style="margin-bottom: 30px;
+				  margin-top: -52px;
+				  width: 28px;
+				  height: 28px;" />
+					
+                    </a> -->
+                </th>
+               
+                <th style="padding:0px">
+                        
+                  <img height="56" alt="a glossy vertcial bar" src="css/pngsss/myglossyvertical.png">
+                  
+                 </th>  
+              
+                <!-- Help -->
+                                 <th style="padding:1px">
+                                  <a alt="App's Help" href="https://www.mlapplications.com/hlpbreatheplus_1" target="_top" 
+								  class="btn-floating waves-effect pulse waves-light  btn-medium" style="background: #0078B7">
+                                      <svg xmlns="http://www.w3.org/2000/svg" height="38" width="56" viewBox="12 0 56 56">
+                                          <g>
+                                              <ellipse cy="28" cx="28" stroke-width="1.875" ry="27.0625" rx="27.0625" stroke="#FFFFFF" fill="transparent"></ellipse>
+                                              <path id="path12121" transform="rotate(0,28,28) translate(13.0670570135117,13) scale(0.9375,0.9375)  " fill="#FFFFFF" d="M14.580002,23.394012L14.580002,26.235001 17.18399,26.235001 17.18399,23.394012z M16.117996,5.7660065C14.539993,5.7660065 13.278992,6.2390137 12.332993,7.1880035 10.991989,8.5250092 10.320999,10.223007 10.320999,12.27301L13.043991,12.27301C13.043991,10.695007 13.437988,9.5130005 14.22699,8.7230072 14.697998,8.25 15.289001,8.0130005 16,8.0130005 16.867996,8.0130005 17.537003,8.25 18.009995,8.7230072 18.561996,9.2750092 18.838989,10.106003 18.838989,11.207001 18.838989,12.077011 18.522995,12.827011 17.89299,13.455002 16.789001,14.561005 16.039001,15.429001 15.644989,16.061005 15.090988,16.92601 14.817001,18.228012 14.817001,19.964005L16.947998,19.964005C16.947998,18.545013 17.302002,17.478012 18.009995,16.767014 18.955994,15.824005 19.705994,15.074005 20.259995,14.522003 21.205002,13.574005 21.679001,12.432007 21.679001,11.090012 21.679001,9.5130005 21.166,8.2109985 20.14299,7.1880035 19.194992,6.2390137 17.853989,5.7660065 16.117996,5.7660065z M16,0C24.819992,0 32,7.178009 32,16.001007 32,24.822006 24.819992,32 16,32 7.1759949,32 0,24.822006 0,16.001007 0,7.178009 7.1759949,0 16,0z">
+                                              </path>
+                                          </g>
+                                      </svg>
+                                  </a>
+                              </th>
+               
+              <th style="padding:0px">
+                        
+                <img style="width: 6px; height:56px;" alt="a glossy vertcial bar" src="css/pngsss/myglossyvertical.png">
+                
+               </th>  
+             
+               <!-- Privacy -->
+              <th style="padding:1px">
+                                <a alt="the app Privacy Policy" href="https://www.mlapplications.com/screenerplus_privacy" target="_blank"  
+								class="btn-floating waves-effect waves-light  btn-medium   " style="background: #0078B7">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="38" width="56" viewBox="12 0 56 56">
+                                        <g>
+                                            <ellipse cy="28" cx="28" stroke-width="1.875" ry="27.0625" rx="27.0625" stroke="#FFFFFF" fill="transparent"></ellipse>
+                                            <path id="path1" transform="rotate(0,28,28) translate(13,14.0926568508148) scale(0.9375,0.9375)  " fill="#FFFFFF" d="M21.914978,18.709999C21.914978,18.709999,31.121033,20.901001,32,29.668999L0,29.668999C0,29.668999,2.6290283,20.021996,10.518005,19.143997L12.65802,28.294998 14.22998,28.284996 16.012024,23.601997 14.348022,20.707001 17.677002,20.707001 16.078979,23.672997 18.116028,28.253998 19.34198,28.243996z M15.778015,0C20.653992,0 24.612,3.9519958 24.612,8.8330002 24.612,13.709 20.653992,17.666 15.778015,17.666 10.897034,17.666 6.9440308,13.709 6.9440308,8.8330002 6.9440308,3.9519958 10.897034,0 15.778015,0z"></path>
+                                        </g>
+                                    </svg>
+                                </a>
+                            </th>
+                   
+                     
+                   <th style="padding:0px">
+                        
+    <img style="width: 6px; height:56px;" alt="a glossy vertcial bar" src="css/pngsss/myglossyvertical.png">
+    
+                   </th>
+                  
+                  
+                  <!-- Devices ! 
+                <th style="padding:1px">
+                       <a alt="Devices and Installation" onclick="myFunctionOpenUrl('https://www.mlapplications.com/hlpbreatheplus_4')" class="btn-floating waves-effect 
+					   waves-light  btn-medium" style="background: #0D2E64">
+                      
+                          
+                          <svg style="margin-top:-122px" xmlns="http://www.w3.org/2000/svg" height="38" width="56" viewBox="12 0 56 56">
+                            <g>
+								<ellipse cy="28" cx="28" stroke-width="1.875" ry="27.0625" rx="27.0625" stroke="#FFFFFF" fill="transparent"></ellipse>
+								<path id="path1" transform="rotate(0,28,28) translate(20,13.9023450729436) scale(0.937499888241304,0.937499888241304)  " fill="#FFFFFF" d="M18,26.800003L18.300018,31.800003 13.5,32 13.200012,27z M7.8000183,24.600006C7.2000122,24.600006 6.7000122,25.100006 6.7000122,25.699997 6.7000122,26.300003 7.2000122,26.800003 7.8000183,26.800003 8.3999939,26.800003 8.8999939,26.300003 8.8999939,25.699997 8.8999939,25.100006 8.3999939,24.600006 7.8000183,24.600006z M15.899994,14.100006C18.700012,14.900009 19.5,18.600006 19.5,18.600006 19.899994,19.699997 19.700012,21.100006 19.700012,21.100006 19.5,22.300003 18.100006,25.900009 18.100006,25.900009L18.100006,26.199997 13.300018,26.5 13.300018,26.199997C12.800018,25.800003 12.399994,25 12.200012,24.600006 12.200012,24.5 12.100006,24.400009 12.100006,24.300003L12.100006,24.199997 12.100006,24.100006 12,22.900009 11.600006,18.400009C11.5,17.699997 11.899994,17.100006 12.399994,17 12.899994,16.900009 13.399994,17.600006 13.5,18.600006L13.5,18.699997C13.800018,19.699997 14,21.900009 14,21.900009 16.200012,22.300003 16.800018,18.900009 16.800018,18.900009 17.200012,17.199997 16.100006,16.800003 16.100006,16.800003z M6,2.1000061L6,2.8000031 9.5,2.8000031 9.5,2.1000061z M1.3999939,0L13.800018,0C14.600006,0,15.200012,0.6000061,15.200012,1.4000092L15.200012,21C14.899994,21.300003,14.600006,21.5,14.100006,21.5L14,21.5C14,21.300003,13.899994,21,13.899994,20.699997L13.899994,4.1000061 1.2000122,4.1000061 1.2000122,23.100006 11.600006,23.100006C11.700012,23.600006,11.700012,24,11.700012,24L11.800018,24.199997C11.800018,24.300003 11.899994,24.5 11.899994,24.600006 12.100006,25.100006 12.399994,25.800003 13,26.300003L13.100006,28.100006 1.3999939,28.100006C0.6000061,28.100006,0,27.5,0,26.699997L0,1.4000092C0,0.6000061,0.6000061,0,1.3999939,0z"></path>
+                                      
+                               </g>
+                               
+                        </svg>
+                       </a>
+                   </th>  
+                   <th style="padding:0px">
+                        
+    <img style="width: 6px; height:56px;" src="css/pngsss/myglossyvertical.png" alt="a glossy vertcial bar">
+    
+                   </th>-->
+   
+                   <!-- Support -->
+                     <th style="padding:1px">
+                       <a alt="Mobility in Life Applications Webpage" href="https://www.mlapplications.com/hlpbreatheplus_1" target="_blank"  class="btn-floating waves-effect waves-light  btn-medium" style="background: #0078B7">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="38" width="56" viewBox="12 0 56 56">
+                               <g>
+                                   <ellipse cy="28" cx="28" stroke-width="1.87499977648261" ry="27.0625001117587" rx="27.0625001117587" stroke="#FFFFFF" fill="transparent"></ellipse>
+                                   <path id="path1" transform="rotate(0,28,28) translate(20,13.9023450729436) scale(0.937499888241304,0.937499888241304)  " fill="#FFFFFF" d="M18,26.800003L18.300018,31.800003 13.5,32 13.200012,27z M7.8000183,24.600006C7.2000122,24.600006 6.7000122,25.100006 6.7000122,25.699997 6.7000122,26.300003 7.2000122,26.800003 7.8000183,26.800003 8.3999939,26.800003 8.8999939,26.300003 8.8999939,25.699997 8.8999939,25.100006 8.3999939,24.600006 7.8000183,24.600006z M15.899994,14.100006C18.700012,14.900009 19.5,18.600006 19.5,18.600006 19.899994,19.699997 19.700012,21.100006 19.700012,21.100006 19.5,22.300003 18.100006,25.900009 18.100006,25.900009L18.100006,26.199997 13.300018,26.5 13.300018,26.199997C12.800018,25.800003 12.399994,25 12.200012,24.600006 12.200012,24.5 12.100006,24.400009 12.100006,24.300003L12.100006,24.199997 12.100006,24.100006 12,22.900009 11.600006,18.400009C11.5,17.699997 11.899994,17.100006 12.399994,17 12.899994,16.900009 13.399994,17.600006 13.5,18.600006L13.5,18.699997C13.800018,19.699997 14,21.900009 14,21.900009 16.200012,22.300003 16.800018,18.900009 16.800018,18.900009 17.200012,17.199997 16.100006,16.800003 16.100006,16.800003z M6,2.1000061L6,2.8000031 9.5,2.8000031 9.5,2.1000061z M1.3999939,0L13.800018,0C14.600006,0,15.200012,0.6000061,15.200012,1.4000092L15.200012,21C14.899994,21.300003,14.600006,21.5,14.100006,21.5L14,21.5C14,21.300003,13.899994,21,13.899994,20.699997L13.899994,4.1000061 1.2000122,4.1000061 1.2000122,23.100006 11.600006,23.100006C11.700012,23.600006,11.700012,24,11.700012,24L11.800018,24.199997C11.800018,24.300003 11.899994,24.5 11.899994,24.600006 12.100006,25.100006 12.399994,25.800003 13,26.300003L13.100006,28.100006 1.3999939,28.100006C0.6000061,28.100006,0,27.5,0,26.699997L0,1.4000092C0,0.6000061,0.6000061,0,1.3999939,0z"></path>
+                               </g>
+                           </svg> 
+                       </a>
+                   </th>
+                   <th style="padding:0px">
+                        
+    <img style="width: 6px; height:56px;" src="css/pngsss/myglossyvertical.png" alt="a glossy vertcial bar">
+    
+                   </th>
+   
+      
+             
+               </tr>
+           </thead>
+   
+           <tbody class="centered">
+               <tr class="centered" style="padding:0px; border-bottom: 0px;">
+<!--                <td style="padding:0px; color: rgb(225,20,0);">.</td>
+      -->            <td style="padding:0px; color: #0078B7;"></td>
+              <td style="padding:0px; color: rgb(225,20,0);">.</td>
+                    <td style="padding:0px; color: #0078B7;">Help ..</td>
+                    <td style="padding:0px; color: rgb(225,20,0);">.</td>
+                    <td style="padding:0px; color: #0078B7;">Privacy</td>
+                    <td style="padding:0px; color: rgb(225,20,0);">.</td>
+                  <!--  <td style="padding:0px; color: white;">Devices</td>
+                    <td style="padding:0px; color: rgb(225,20,0);">.</td>
+			   --> 
+                     <td style="padding:0px; color: #0078B7;">+Support</td>
+                     <td style="padding:0px; color: rgb(225,20,0);">.</td>
+                   
+                 
+                
+					
+                   
+					 
+                  
+                
+                 
+                  
+               </tr>
+           </tbody>
+       </table>
+       </div>
+       
+    
+    <div class="col s12 push-s3">
+     
+    </div>  
+	</div>
+	</div>
+	</footer>
+
+		   <!--
+<div id="footer"  style="width:330px; height:79px; bottom: 10px; position:absolute; background-color: #000000;">
+	
+</div>		-->	 
+<script type="text/javascript" src="js/myscreener.js"></script>
+	</body>
+
+</html>
